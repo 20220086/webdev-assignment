@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('assignment background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #e8f8fc;
+        }
+        .menu_container { /*content 테두리*/
+			position: fixed;
+        	left: 5%;
+        	top: 10%;
+        	width: 20%;
+        	height: 300+20px; /*헤더 높이만큼 추가*/
+            border : 8px solid #AACDDC;
+        }
+        .content_container {
+            position: fixed;
+            top: 10%;
+            left: 30%;
+            width: 65%;
+            height: 300+20px; /*헤더 높이만큼 추가 2*/
+            border : 8px solid #AACDDC;
+        }
+        .menu {
+        	width: 100%;
+        	height: 100%;
+            background-color: #AACDDC; 
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+        	background-color: #AACDDC;
+        }
+        .menu iframe,
+			.content iframe { /*fcf6e8*/
+			    width: 100%;
+			    height: 300px;
+			    border: none;
+			    background-color: #fcf6e8;
+		}
+        .header { /*각 제목*/
+	   		text-align: center;
+            font-weight: bold;
+            padding: 10px; 
+            background-color: #81A6C6;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu_container">
+        <div class="menu">
+            <div class="header">동물 목록</div>
+            <iframe src="menu.html"></iframe>
+        </div>
+    </div>
+    <div class="content_container">
+        <div class="content">
+            <div class="header">동물을 입양해주세요</div>
+            <iframe src="content.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
